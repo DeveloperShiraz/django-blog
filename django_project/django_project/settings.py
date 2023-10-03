@@ -31,6 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig', #This is the created app template for blogs.
+    'users.apps.UsersConfig', #This is the created app template for users.
+    'crispy_forms', #This is an imported app.
+    'crispy_bootstrap4', #This is required for using bootstrap 4 themes.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -121,3 +125,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
